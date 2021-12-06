@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formularze</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>BIBLIOTEKA</h1>
+    <div class="container">
+      <div class="table">
+        <table class="books-table">
+          <thead>
+            <tr>
+              <th>Tytuł książki</th>
+              <th>Autor</th>
+              <th>Kategoria</th>
+              <th>Priorytet</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+      <div class="form-container">
+        <div class="header">
+          <h2>Dodaj książkę</h2>
+        </div>
+
+        <form id="form" class="form">
+          <div class="form-section">
+            <label for="title">Podaj tytuł książki</label>
+            <input type="text" id="title" placeholder="Tytuł" />
+            <small>error</small>
+          </div>
+          <div class="form-section">
+            <label for="author">Podaj autora</label>
+            <input type="text" id="author" placeholder="Autor" />
+            <small>error</small>
+          </div>
+
+          <div class="form-section">
+            <label for="priority">Priorytet przeczytania</label>
+            <select id="priority">
+              <option value="" selected disabled hidden>Wybierz</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <small>error</small>
+          </div>
+          <div class="form-section">
+            <label for="category">Kategoria</label>
+            <select id="category">
+              <option value="" selected disabled hidden>Wybierz</option>
+              <option value="Romance">Romans</option>
+              <option value="Biography">Biografia</option>
+              <option value="Fantasy">Fantasy</option>
+            </select>
+            <small>error</small>
+          </div>
+
+          <button class="button" id="button">Zapisz książkę</button>
+        </form>
+        <script src="script.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
